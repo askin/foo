@@ -1,2 +1,3 @@
 foo
 ===
+Çeşitli deneyleri yaptığım çokcuk parkım...
