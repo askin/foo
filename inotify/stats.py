@@ -4,7 +4,6 @@ from pyinotify import EventsCodes
 from identity import Identity
 
 
-
 def on_loop(notifier):
     # notifier.proc_fun() is Identity's instance
     s_inst = notifier.proc_fun().nested_pevent()

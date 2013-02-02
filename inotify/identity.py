@@ -1,5 +1,6 @@
 import pyinotify
 
+
 class Identity(pyinotify.ProcessEvent):
     def process_default(self, event):
         # Does nothing, just to demonstrate how stuffs could trivially
