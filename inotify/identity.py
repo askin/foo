@@ -1,13 +1,25 @@
 import pyinotify
-
+import os
 
 class Identity(pyinotify.ProcessEvent):
+    """Class for handlig inotify events
+    """
+
     def process_default(self, event):
-        # Does nothing, just to demonstrate how stuffs could trivially
-        # be accomplished after having processed statistics.
+        """
+        (Identity, Stats) -> None
+
+        Does nothing, just to demonstrate how stuffs could trivially
+        be accomplished after having processed statistics.
+        """
         print 'Does nothing.'
 
     def process_IN_CREATE(self, event):
+        """
+        (Identity, Stats) -> None
+
+        Event action where a object created in directory
+        """
         print "CREATE %s/%s" % (event.path, event.name)
 
     def process_IN_DELETE(self, event):
